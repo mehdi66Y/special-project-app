@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    font-size: 17px;
+    line-height: 2;
+    position: relative;
+
+    
+}
+main {
+    margin: 10px auto;
+    height: 250px;
+    position: relative;
+    max-width: 800px;
+
+}
+main  img {
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+main  img.active {
+    opacity: 1;
+}
+.slide-info {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.583);
+    z-index: 2;
+    font-weight: 500;
+    border-radius: 8px;
+    left: 10px;
+    top: 10px;
+}
+.buttons {
+    margin: 10px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.buttons .next , .buttons .previous {
+    padding: 10px 15px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttons button.disable {
+    background-color: #00968778;
+    cursor: no-drop;
+}
+.buttons .bullets span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #f6f6f6;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons .bullets span.active {
+    background-color: #009688;
+    color: white;
+}

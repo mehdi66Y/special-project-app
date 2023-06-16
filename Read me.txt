@@ -1,0 +1,2 @@
+1- add disable class to specific button
+2- 
